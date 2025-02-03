@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="850.0" styleClass="clients_container" stylesheets="@../../Styles/Clients.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.moshu.mazebank.Controllers.Admin.ClientsController">
+   <children>
+      <Text layoutX="349.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clients" AnchorPane.topAnchor="14.5" />
+      <ListView fx:id="clients_listview" layoutX="325.0" layoutY="275.0" prefHeight="640.0" prefWidth="830.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="100.0" />
+   </children>
+</AnchorPane>

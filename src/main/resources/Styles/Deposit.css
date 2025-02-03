@@ -1,0 +1,148 @@
+
+.deposit_container {
+	-fx-background-color: #EEEEEE;
+}
+
+.search_box {
+	-fx-spacing: 10;
+	-fx-border-color: #AAAAAA;
+	-fx-border-width: 0 0 1 0;
+}
+
+Text {
+	-fx-font-family: "Calibri Light";
+	-fx-font-size: 1.6em;
+	-fx-fill: #555555;
+}
+
+TextField {
+	-fx-pref-width: 200;
+	-fx-pref-height: 35;
+	-fx-background-color: #FFFFFF;
+	-fx-effect: dropshadow(three-pass-box, #AAAAAA, 3, 0, 0, 3);
+}
+
+Button {
+	-fx-background-color: linear-gradient(to right, #132A13, #253F25);
+	-fx-effect: dropshadow(three-pass-box, #AAAAAA, 3, 0, 0, 3);
+	-fx-font-size: 1.6em;
+	-fx-text-fill: #FFFFFF;
+	-fx-font-family: "Calibri Light";
+	-fx-pref-width: 200;
+}
+
+Button:hover {
+	-fx-cursor: hand;
+}
+
+.search_error_lbl {
+	-fx-font-size: 1.2em;
+	-fx-text-fill: #dc143c;
+	-fx-font-family: "Calibri Light";
+	-fx-pref-width: 300;
+	-fx-pref-height: 60;
+	-fx-wrap-text: true;
+	-fx-alignment:	center;
+}
+
+.result_box {
+	-fx-background-color: #EEEEEE;
+}
+
+.list-view {
+	-fx-background-color: #FFFFFF;
+	-fx-border-color: #ccc;
+    -fx-border-width: 2px;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-padding: 5px;
+}
+
+.list-cell {
+	-fx-background-color: #FFFFFF;
+	-fx-padding: 10px;
+	-fx-pref-height: 35;
+	-fx-text-fill: #333;
+	-fx-border-color: #ddd;         
+    -fx-border-width: 0 0 1px 0;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;    
+}
+
+.list-cell:selected {
+	-fx-background-color: linear-gradient(to right, #081224, #352087, #00f9ff);
+	-fx-text-fill: #fff;
+	-fx-border-radius: 10px;
+	-fx-background-radius: 10px;
+}
+
+.deposit_section_text {
+	-fx-font-family: "Calibri Light";
+	-fx-font-size: 2em;
+	-fx-fill: #132A13;
+	-fx-font-weight: bold;
+}
+
+.paddress_lbl {
+	-fx-pref-width: 200;
+	-fx-pref-height: 35;
+	-fx-font-family: "Calibri Light";
+	-fx-font-size: 1.6em;
+	-fx-text-fill: #555555;
+	-fx-alignment: center;
+}
+
+.account_selector {
+	-fx-background-color: #ECF39E;
+	-fx-pref-width: 200;
+	-fx-pref-height: 35;
+	
+}
+
+.account_selector .label {
+	-fx-text-fill: #132A13;
+	-fx-font-size: 1.1em;
+	-fx-alignment: center;
+}
+
+.account_selector .arrow {
+	-fx-background-color: #132A13;
+}
+
+#choice-box-popup-menu {
+	-fx-background-color: #ECF39E;
+	-fx-pref-width: 200;
+	-fx-text-fill: #132A13;
+	-fx-font-size: 1.1em;
+	-fx-alignment: center;
+}
+
+
+.deposit_box {
+	-fx-spacing: 20;
+	-fx-padding: 20;
+}
+
+FontAwesomeIconView {
+	-fx-fill: #FFFFFF;
+}
+
+.deposit_error_lbl {
+	-fx-font-size: 1.2em;
+	-fx-text-fill: #dc143c;
+	-fx-font-family: "Calibri Light";
+	-fx-pref-width: 300;
+	-fx-pref-height: 60;
+	-fx-wrap-text: true;
+	-fx-alignment: center;
+}
+
+.deposit_success_lbl {
+	-fx-font-size: 1.2em;
+	-fx-text-fill: #3cb371;
+	-fx-font-family: "Calibri Light";
+	-fx-pref-width: 300;
+	-fx-pref-height: 60;
+	-fx-wrap-text: true;
+	-fx-alignment: center;
+}

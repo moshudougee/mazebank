@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="180.0" styleClass="main_menu_container" stylesheets="@../../Styles/ClientMenu.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.moshu.mazebank.Controllers.Admin.AdminMenuController">
+   <children>
+      <AnchorPane prefHeight="730.0" prefWidth="160.0" styleClass="left_container">
+         <children>
+            <VBox layoutX="34.0" layoutY="7.0" prefHeight="80.0" prefWidth="100.0" styleClass="title_container" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <FontAwesomeIconView glyphName="BANK" selectionStart="0" size="30" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Maze Bank">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+            <VBox layoutX="40.0" layoutY="191.0" prefHeight="400.0" prefWidth="100.0" styleClass="menu_container" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+               <children>
+                  <Button fx:id="create_client_btn" mnemonicParsing="false" text="Create Client">
+                     <graphic>
+                        <FontAwesomeIconView fx:id="create_client_icon" glyphName="PLUS" size="20" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="clients_btn" mnemonicParsing="false" prefWidth="133.0" text="Clients">
+                     <graphic>
+                        <FontAwesomeIconView fx:id="clients_icon" glyphName="LIST" size="18" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="deposit_btn" mnemonicParsing="false" text="Deposit">
+                     <graphic>
+                        <FontAwesomeIconView fx:id="deposit_icon" glyphName="MONEY" size="20" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="profile_btn" mnemonicParsing="false" styleClass="alt_menu_btn" text="Profile">
+                     <graphic>
+                        <FontAwesomeIconView fx:id="profile_icon" glyphName="USER" size="20" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="logout_btn" mnemonicParsing="false" styleClass="alt_menu_btn" text="Logout">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="SIGN_OUT" size="20" />
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox layoutX="40.0" layoutY="524.0" prefHeight="120.0" prefWidth="100.0" styleClass="report_container" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Report Suggestion/Bugs" />
+                  <Label text="Use this to report any bug or suggestions" />
+                  <Button fx:id="report_btn" mnemonicParsing="false" text="Report">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="PLUS" />
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
